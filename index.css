@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141313;
+    min-height: 100vh;
+    background-size: cover;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e04848;
+    background-size: cover;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-elements {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+}
+
+
+.nav-items {
+    color: black;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: "Roboto";
+}
+
+.nav-items:nth-child(2) {
+    color: black;
+}
+
+.nav-items:nth-child(4) {
+    color: black;
+}
+
+.nav-items:nth-child(6) {
+    color: black;
+}
+
+
+.menubar-img {
+    height: 18px;
+    width: 18px;
+}
+
+.slides-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.slide-one {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 15px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    background-image: linear-gradient(to right, #e8d7a0, #e5c0f0);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Roboto";
+}
+
+.slide-one-heading {
+    font-size: 16px;
+    padding: 0;
+}
+
+.slide-one-text {
+    font-size: 12px;
+    padding-bottom: 15px;
+    font-family: "Roboto";
+}
+
+.slide-one-image {
+    width: 50%;
+    height: 100%;
+    order: 0;
+}
+
+.slide-one-button {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 500;
+    border: none;
+    background-color: #e33059;
+    height: 25px;
+    width: 65px;
+    align-self: flex-start;
+    cursor: pointer;
+    font-family: "Roboto";
+}
+
+.slide-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50vh;
+    background-image: radial-gradient(at top left, #e8d7a0, #e5c0f0);
+    background-size: cover;
+}
+
+.slide-two-images-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+    width: 45%;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 48%;
+    height: 100%;
+}
+
+.small-image {
+    height: 48%;
+    width: 100%;
+}
+
+.large-image {
+    width: 48%;
+    height: 100%;
+}
+
+.slide-two-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
+    width: 40%;
+    background-color: #e04848;
+    padding: 10px;
+    font-family: "Roboto";
+}
+
+.slide-two-info-container:hover {
+    background-color: blue;
+    color: white;
+}
+
+.slide-two-info-text {
+    font-size: 12px;
+}
+
+.slide-two-info-heading {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.slide-two-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 25px;
+    width: 65px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.slide-two-button-icon {
+    height: 15px;
+    width: 15px;
+    padding-left: 12px;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .navbar {
+        height: 12vh;
+    }
+
+    .nav-items {
+        font-size: 14px;
+    }
+
+    .menubar-img {
+        height: 22px;
+        width: 22px;
+    }
+
+    .slide-one,
+    .slide-two {
+        height: 70vh;
+    }
+
+    .slide-one-heading {
+        font-size: 20px;
+    }
+
+    .slide-one-text {
+        font-size: 15px;
+    }
+
+    .slide-one-button {
+        font-size: 13px;
+        height: 30px;
+        width: 110px;
+    }
+
+    .slide-two-info-heading {
+        font-size: 20px;
+    }
+
+    .slide-two-info-text {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        height: 12vh;
+    }
+
+    .nav-items {
+        font-size: 18px;
+    }
+
+    .menubar-img {
+        height: 26px;
+        width: 26px;
+    }
+
+    .slide-one,
+    .slide-two {
+        height: 95vh;
+    }
+
+    .slide-one-heading {
+        font-size: 30px;
+    }
+
+    .slide-one-text {
+        font-size: 18px;
+    }
+
+    .slide-one-button {
+        font-size: 14px;
+        height: 34px;
+        width: 140px;
+    }
+
+    .slide-two-info-heading {
+        font-size: 28px;
+    }
+
+    .slide-two-info-text {
+        font-size: 18px;
+    }
+
+    .slide-two-button {
+        height: 30px;
+        width: 120px;
+    }
+
+    .slide-two-button-text {
+        font-size: 16px;
+    }
+
+    .slide-two-button-icon {
+        height: 22px;
+        width: 22px;
+    }
+
+    .slide-two-images-container {
+        height: 75%;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width: 1200px) {
+    .slide-one-button {
+        background-color: yellow;
+    }
+}
